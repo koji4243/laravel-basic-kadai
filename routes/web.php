@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 
 Route::get('/posts', [GetsController::class, 'index']);
+
+Route::get('/posts/{id}', [GetsController::class, 'show']);
