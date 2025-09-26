@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\GetsController;
+use App\Http\Controllers\PostsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/posts', [GetsController::class, 'index']);
+Route::get('/posts', [PostsController::class, 'index']);
 
-Route::get('/posts/{id}', [GetsController::class, 'show']);
+Route::get('/posts/{id}', [PostsController::class, 'show']);
